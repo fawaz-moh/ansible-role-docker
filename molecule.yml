@@ -1,0 +1,16 @@
+---
+ansible:
+  playbook: tests/test.yml
+
+dependency:
+  name: galaxy
+
+driver:
+  name: docker
+
+docker:
+  containers:
+    - name: ansible-role-docker-ubuntu-xenial
+      image: ubuntu
+      image_version: '16.04'
+

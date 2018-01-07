@@ -1,0 +1,12 @@
+galaxy_info:
+  author: Fawaz Mohammed
+  description: Role for installing docker.
+  license: MIT
+  min_ansible_version: 2.0
+  platforms:
+  - name: Ubuntu
+    versions:
+    - xenial
+  galaxy_tags:
+    - docker
+dependencies: []

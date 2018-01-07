@@ -1,0 +1,32 @@
+---
+- name: ensure ca-certificates installed
+  become: yes
+  apt:
+    name: ca-certificates
+    state: present
+
+- name: ensure apt-transport-https installed
+  become: yes
+  apt:
+    name: apt-transport-https
+    state: present
+
+- name: add kubernetes key
+  become: yes
+  apt_key:
+    id: '{{ docker_apt_key_id }}'
+    url: 'https://download.docker.com/linux/ubuntu/gpg'
+    state: present
+
+- name: add docker repo
+  become: yes
+  apt_repository:
+    repo: 'deb [arch=amd64] https://download.docker.com/linux/ubuntu \
+    xenial main'
+    state: present
+
+- name: install docker
+  become: yes
+  apt:
+    name: docker-ce-{{ docker_version }}
+    state: present

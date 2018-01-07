@@ -1,0 +1,2 @@
+# vars main file for ansible-role-docker
+docker_version: "17.03.2"

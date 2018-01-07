@@ -2,5 +2,4 @@
 - hosts: all
   remote_user: root
   roles:
-    - role: ansible-role-docker
-      docker_node_type: all
+  - { role: docker }

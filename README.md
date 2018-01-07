@@ -23,7 +23,7 @@ Role Variables
 ### `docker_version`
 
 Specify the version of docker.
-Default value: '17.0.3.2'
+Default value: '17.03.2~ce-0~ubuntu-xenial'
 
 Example Playbook
 ----------------

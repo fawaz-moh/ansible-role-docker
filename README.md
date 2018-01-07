@@ -21,8 +21,10 @@ Role Variables
 --------------
 
 ### `docker_version`
+
 Specify the version of docker.
 Default value: '17.0.3.2'
+
 Example Playbook
 ----------------
 
